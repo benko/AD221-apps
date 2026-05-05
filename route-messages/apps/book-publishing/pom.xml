@@ -7,7 +7,7 @@
     <artifactId>processing-orders</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>processing-orders</name>
-    <description>GE: Processing Orders with the File Component</description>
+    <description>GE: Routing Messages</description>
 
     <parent>
         <groupId>com.redhat.training</groupId>

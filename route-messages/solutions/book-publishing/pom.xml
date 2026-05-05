@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.redhat.training</groupId>
     <artifactId>processing-orders-solution</artifactId>
-    <description>GE: Processing Orders with the File Component</description>
+    <description>GE: Routing Messages</description>
     <version>0.0.1-SNAPSHOT</version>
     <name>processing-orders-solution</name>
 
