@@ -5,7 +5,7 @@ import org.apache.camel.builder.RouteBuilder;
 public class SchedulerRouteBuilder extends RouteBuilder {
     @Override
     public void configure() {
-        from("scheduler:myScheduler?delay=2000")
+        from("scheduler:myScheduler?delay=2000&includeMetadata=true")
         .routeId("Java DSL route")
         .setBody().simple("Current time is ${header.CamelTimerFiredTime}")
         .log("Sending message to the body logging route")
