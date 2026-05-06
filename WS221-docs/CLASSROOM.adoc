@@ -1,0 +1,21 @@
+JDK 17:
+
+    sudo alternatives --set java /usr/lib/jvm/java-17-openjdk-17.0.2.0.8-15.el8.x86_64/bin/java
+    sudo alternatives --set jre_openjdk /usr/lib/jvm/java-17-openjdk-17.0.2.0.8-15.el8.x86_64
+    sudo alternatives --set javac /usr/lib/jvm/java-17-openjdk-17.0.2.0.8-15.el8.x86_64/bin/javac
+    sudo alternatives --set java_sdk_openjdk /usr/lib/jvm/java-17-openjdk-17.0.2.0.8-15.el8.x86_64
+
+Blow up settings.xml:
+
+    rm -f ~/.m2/settings.xml
+
+Fix parent POM:
+
+    cd ~/AD221/AD221-apps
+    mvn install
+
+Disable Quarkus usage analytics:
+
+    mkdir -p ~/.redhat
+    echo '{"disabled":true}' > ~/.redhat/io.quarkus.analytics.localconfig
+
